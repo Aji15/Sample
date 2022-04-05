@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "bookName": "The Lion King",
+      "category": "Jungle",
+      "price": "900",
+      "author": "Therla",
+      "id": 1
+    },
+    {
+      "bookName": "Mersal",
+      "category": "Medical",
+      "price": "8500",
+      "author": "Atlee",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

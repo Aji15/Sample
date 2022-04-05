@@ -1,0 +1,31 @@
+<h1 mat-dialog-title> Bookstore </h1>
+<div mat-dialog-content>
+    <form [formGroup]="bookForm">
+     
+    <mat-form-field appearance="outline">
+        <mat-label>Book Name</mat-label>
+        <input formControlName="bookName" matInput placeholder="Book Name">
+      </mat-form-field>
+     
+      <mat-form-field appearance="outline">
+        <mat-label>Category</mat-label>
+        <input formControlName="category" matInput placeholder="Category">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input formControlName="price"matInput placeholder="Price">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Author</mat-label>
+        <input formControlName="author"matInput placeholder="Author">
+      </mat-form-field>
+    </form>
+  </div>
+
+<div mat-dialog-action [align] = "'end'">
+    <button mat-raised-button color="accent" mat-dialog-close >Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addBook()" >{{actionBtn}}</button>
+    
+</div>
